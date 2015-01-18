@@ -78,20 +78,20 @@ public class ProcessConnectionThread implements Runnable
 					robot.keyRelease(KeyEvent.VK_LEFT);
 					break;
 				case LAND_R:
-					robot.keyPress(KeyEvent.VK_D);
-					robot.keyPress(KeyEvent.VK_D);
+					robot.keyPress(KeyEvent.VK_RIGHT);
+					robot.keyPress(KeyEvent.VK_RIGHT);
 					System.out.println("move right");
 					
 					break;
 				case LAND_L:
-					robot.keyPress(KeyEvent.VK_A);
-					robot.keyPress(KeyEvent.VK_A);
+					robot.keyPress(KeyEvent.VK_LEFT);
+					robot.keyPress(KeyEvent.VK_LEFT);
 					System.out.println("move left");
 					
 					break;
 				case THROW:
-					robot.keyPress(KeyEvent.VK_E);
-					robot.keyPress(KeyEvent.VK_E);
+					robot.keyPress(KeyEvent.VK_UP);
+					robot.keyPress(KeyEvent.VK_UP);
 					System.out.println("throw");
 					
 					break;

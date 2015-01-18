@@ -278,11 +278,12 @@ public class RemoteBluetooth extends Activity implements SensorEventListener
 		//System.out.println("Heading: " + Float.toString(degreey) + " degrees");
 
 		currentDegree = degree;
-
+		reset = true;
+		
 		if (currentDegree > 50 && reset)
 		{
 			System.out.println("Landscape left");
-			Toast.makeText(this, "landleft", Toast.LENGTH_LONG).show();
+			//Toast.makeText(this, "landleft", Toast.LENGTH_LONG).show();
 			reset = false;
 
 			if (state == 1)
@@ -293,7 +294,7 @@ public class RemoteBluetooth extends Activity implements SensorEventListener
 		} else if (currentDegree < -50 && reset)
 		{
 			System.out.println("Landscape right");
-			Toast.makeText(this, "landright", Toast.LENGTH_LONG).show();
+			//Toast.makeText(this, "landright", Toast.LENGTH_LONG).show();
 			reset = false;
 
 			if (state == 1)
@@ -304,7 +305,7 @@ public class RemoteBluetooth extends Activity implements SensorEventListener
 		else if (degreey > -30 && reset)
 		{
 			System.out.println("throwing!");
-			Toast.makeText(this, "landright", Toast.LENGTH_LONG).show();
+			//Toast.makeText(this, "landright", Toast.LENGTH_LONG).show();
 			reset = false;
 
 			if (state == 1)
